@@ -1,0 +1,366 @@
+body {
+    font-family: 'Segoe UI' ;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+}
+
+/* side bar */
+
+#side-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 20vw;
+}
+
+#side-one {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    margin: 0.4rem;
+}
+
+#home {
+    margin-bottom: 0.8rem;
+}
+
+#home a {
+    text-decoration: none;
+    color: white;
+    margin-left: 0.8rem;
+    font-weight: 500;
+}
+
+#home i {
+    font-size: 1.1rem;
+}
+
+#search {
+    opacity: 0.7;
+}
+
+#search:hover {
+    opacity: 1;
+}
+
+#search a {
+    text-decoration: none;
+    color: white;
+    margin-left: 0.8rem;
+    font-weight: 500;
+}
+
+#search i {
+    font-size: 1.1rem;
+}
+
+#side-two {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    margin: 0 0.4rem;
+    padding-bottom: 7.1rem;
+}
+
+#lib-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    opacity: 0.7;
+}
+
+#lib-options:hover {
+    opacity: 1;
+}
+
+#option-one a {
+    text-decoration: none;
+    color: white;
+    margin-left: 0.6rem;
+    font-weight: 500;
+}
+
+#option-one img {
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+#option-two i {
+    margin-left: 0.7rem;
+}
+
+#box {
+    background-color: #1d1d1d;
+    margin: 0 0.5rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#box-p1 {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+}
+
+#box-p2 {
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 0 1rem 0.5rem 1rem;
+}
+
+.badge {
+    font-weight: 700;
+    border-radius: 5rem;
+    border: 1px solid white;
+    padding: 0.3rem 0.8rem;
+    margin: 0.7rem 1rem;
+    font-size: 0.8rem;
+}
+
+/* main content  */
+
+#main-content {
+    background-color: #121212;
+    flex: 1;
+    overflow: auto;
+    margin: 0.4rem 0.4rem 0.4rem 0;
+    border-radius: 0.5rem;
+    padding-bottom: 5rem;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+#nav-icons {
+    margin-left: 0.8rem;
+}
+
+#border {
+    background-color: #050505;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0 0.1rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+#explore-button {
+    font-weight: 700;
+    border-radius: 5rem;
+    border: 1px solid white;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+}
+
+#install-button {
+    font-weight: 700;
+    border-radius: 5rem;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #161616;
+    width: 170px;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.card:hover {
+    background-color: #1b1b1b;
+}
+
+#main-heading {
+    margin: 0 1rem;
+}
+
+.card img {
+    width: 85%;
+    margin: 0.6rem;
+    border-radius: 0.25rem;
+}
+
+.card-title {
+    margin: 0 0.6rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.card-info {
+    margin: 0.5rem 0.6rem 0.8rem 0.6rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+/* music player  */
+
+#music-player {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#album {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+#album img {
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+#music-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#music-title {
+    font-weight: 500;
+}
+
+#music-singer {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+#music-name a {
+    text-decoration: none;
+    color: white;
+    padding: 0 0.8rem;
+}
+
+#heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player-controls-icon1, #player-controls-icon2, #player-controls-icon4, #player-controls-icon5 {
+    height: 0.8rem;
+    margin: 0.5rem 1rem;
+    opacity: 0.8;
+}
+
+#player-controls-icon3 {
+    height: 1.7rem;
+    margin: 0.5rem 1rem;
+}
+
+#player-controls-icon1 {
+    height: 0.8rem;
+    opacity: 0.8;
+}
+
+#player-controls-icon5 {
+    height: 0.8rem;
+    opacity: 0.8;
+}
+
+.progess-bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progess-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progess-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: #0fd457;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.time {
+    margin: 0 0.5rem;
+    font-size: 0.85rem;
+}
+
+#controls {
+    width: 25%;
+    padding-left: 5rem;
+}
+
+#valume {
+    width: 30%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+#valume::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+#valume::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #0fd457;
+    border-radius: 50%;
+    margin-top: -3.3px;
+}
+
+#controls i {
+    margin: 0.3rem;
+    opacity: 0.7;
+}
